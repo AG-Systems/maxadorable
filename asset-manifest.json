@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.5bfd221c.chunk.css",
-    "main.js": "/static/js/main.3d4fa94e.chunk.js",
-    "main.js.map": "/static/js/main.3d4fa94e.chunk.js.map",
+    "main.js": "/static/js/main.58744d8f.chunk.js",
+    "main.js.map": "/static/js/main.58744d8f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b3424a4b.js",
     "runtime-main.js.map": "/static/js/runtime-main.b3424a4b.js.map",
     "static/css/2.b75becd1.chunk.css": "/static/css/2.b75becd1.chunk.css",
     "static/js/2.d84893ab.chunk.js": "/static/js/2.d84893ab.chunk.js",
     "static/js/2.d84893ab.chunk.js.map": "/static/js/2.d84893ab.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.203ed8fd033eb7ebfc7c5064ddfb2a03.js": "/precache-manifest.203ed8fd033eb7ebfc7c5064ddfb2a03.js",
+    "precache-manifest.92a266ae81eb81e73009105afd048ce9.js": "/precache-manifest.92a266ae81eb81e73009105afd048ce9.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.b75becd1.chunk.css.map": "/static/css/2.b75becd1.chunk.css.map",
     "static/css/main.5bfd221c.chunk.css.map": "/static/css/main.5bfd221c.chunk.css.map",
@@ -41,6 +41,7 @@
     "static/media/porsche-s-99x-electr-7_800x0w.jpg": "/static/media/porsche-s-99x-electr-7_800x0w.55a2fad8.jpg",
     "static/media/radial_2.png": "/static/media/radial_2.9f390f73.png",
     "static/media/sdc.png": "/static/media/sdc.d01415db.png",
+    "static/media/seaturtles.jpeg": "/static/media/seaturtles.d2741553.jpeg",
     "static/media/shutterstock_674781376.0.jpg": "/static/media/shutterstock_674781376.0.f4b3edb8.jpg",
     "static/media/space.jpg": "/static/media/space.a344d37e.jpg",
     "static/media/space2.jpg": "/static/media/space2.f70373b3.jpg",
@@ -57,6 +58,6 @@
     "static/css/2.b75becd1.chunk.css",
     "static/js/2.d84893ab.chunk.js",
     "static/css/main.5bfd221c.chunk.css",
-    "static/js/main.3d4fa94e.chunk.js"
+    "static/js/main.58744d8f.chunk.js"
   ]
 }
