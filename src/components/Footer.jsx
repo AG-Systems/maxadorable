@@ -13,7 +13,7 @@ class Footer extends React.Component {
             <div className="col-md-8">
               <div className="card-body">
                 <h5 className="card-title">Last piece of info</h5>
-                <p className="card-text">Infomation might not be up to date and/or may not contain everything. Please contact me if possible.</p>
+                <p className="card-text" style={{ fontSize: "13px" }}>Infomation might not be up to date and/or may not contain everything. Please contact me for full verfication.</p>
                 <p className="card-text"><small className="text-muted">References available upon request.</small></p>
               </div>
             </div>

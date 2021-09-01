@@ -35,14 +35,14 @@ getExperience() {
           "total_length": "3 Months",
           "img": require("../images/logos/barrick.jfif"),
           "description": [
-            "• Specific role: Reliability Engineering.",
-            "• Created simulations with SolidWorks CAD, Rocky DEM, Python, and Ansys Fluent CFD.",
-            "• Simulated particle flow to real world scenarios for analysis to improve reliability.",
-            "• Designed, modified, and tested models in SolidWorks with GD&T and basic FEA.",
+            "• Improved reliability, production, and safety by eliminating hazard of transfer chute maintenance.",
+            "• Involved simulating ore flow for transfer chute to defect elimination with SolidWorks CAD, Rocky DEM, Python, and Ansys Fluent CFD (one-way coupling).",
+            "• Designed, modified, optimized, and tested custom models with GD&T and FEA for transfer chute design.",
+            "• (basic usage only): Ansys Fluent, GD&T, FEA",
             "",
             "More infomation: ",
             "• Nevada Gold Mines is a joint venture between Barrick Gold Corporation (61.5%) and Newmont Goldcorp Corporation (38.5%).",
-            "• Worked at the Carlin @ Gold Quarry mine.",
+            "• Worked at the Carlin @ GQ Roaster Mill.",
             "• Barrick & Newmont are the world's largest gold mining companies.",
             "• MSHA certifed."
 

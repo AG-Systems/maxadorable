@@ -132,8 +132,10 @@ class Card extends React.Component {
                   </div>
                 </div>
               </div>
+
+
                 {/* MOBILE  */}
-                <div className={ exp.minimized ? "media mt-1 d-lg-none" : "media mt-4 d-lg-none" } key={ hash("desktop-" + exp.date_ended + index + Math.floor(Math.random() * Math.floor(1000))) + exp.index }>
+                <div className={ exp.minimized ? "media mt-1 d-lg-none" : "media d-lg-none" } style={( exp.minimized || index === 0 )? {} : {marginTop: "3.3rem"}} key={ hash("mobile-" + exp.date_ended + index + Math.floor(Math.random() * Math.floor(1000))) + exp.index }>
                   <img src={ exp.img } className="mr-3 d-lg-none" alt="..." height="45" width="45" />
                   <div className={ exp.hide_bottom_bar ? "media-body d-lg-none" : "media-body d-lg-none"}>
                     <h3 className="mt-0 mb-0 dark-mode-card-title" style={{ fontSize: "15px", fontWeight: "600" }}>{ exp.title }</h3>
@@ -146,7 +148,7 @@ class Card extends React.Component {
                     </p>
                   </div>
                 </div>
-                <div className="d-lg-none">
+                <div className={ exp.minimized ? "d-lg-none" : "d-lg-none" } >
                   <span hidden={ data_list[index].description.length === 0 } style={{ fontSize: "12px" }}>
                   <ExpandCollapse
                     previewHeight="88px"

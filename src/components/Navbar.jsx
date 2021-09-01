@@ -164,9 +164,15 @@ class Navbar extends React.Component {
     this.setState({ is_hovering: value });
   }
 
-  changeBio(value)
+  changeBio(value=null)
   {
-    this.setState({ bio_expand: value });
+    if(value !== null)
+    {
+      this.setState({ bio_expand: value });
+    } else {
+      this.setState({ bio_expand: !this.state.bio_expand });
+    }
+
   }
 
   refreshImage()
@@ -284,7 +290,7 @@ class Navbar extends React.Component {
           <div className="card-body">
             <img alt='' className='card-img-profile' src={ require("../images/profile/Wall-ESoundtrack.jpg") } style={{ height: "120px", width: "120px" }} />
             <h3 className="card-text" style={{ fontFamily: "Titillium Web", color: this.state["dark_mode"] ? "#f8f9fa" : "#1c1e20"}} >Max Chakhmatov</h3>
-            <a href={process.env.PUBLIC_URL + '/Max_Chakhmatov_resume.pdf'} className="btn btn-mycolor"> Resume </a>
+            <a target="_blank" href={process.env.PUBLIC_URL + '/Max_Chakhmatov_resume.pdf'} className="btn btn-mycolor"> Resume </a>
             <br/>
             <br/>
               <span className="dark-mode">
@@ -292,8 +298,16 @@ class Navbar extends React.Component {
               </span>
               <p style={{ color: "#1fd19b" }}
               onMouseEnter={() => this.changeBio(true)}
-              onClick={() => this.changeBio(false)}
+              onMouseLeave={() => this.changeBio(false)}
+              className="d-lg-none"
               > { this.state.bio_expand ? "Expanded..." : "Read more" } </p>
+
+              <p style={{ color: "#1fd19b" }}
+              onMouseEnter={() => this.changeBio(true)}
+              onClick={() => this.changeBio(false)}
+              className="d-none d-lg-block"
+              > { this.state.bio_expand ? "Expanded..." : "Read more" } </p>
+
               {this.state.bio_expand &&
                   <FadeIn>
                     <p>
@@ -611,19 +625,19 @@ class Navbar extends React.Component {
             </div>
 
             <div className="footer-copyright py-3">
-              <a href="https://www.linkedin.com/in/max-chakhmatov/">
+              <a target="_blank" href="https://www.linkedin.com/in/max-chakhmatov/">
                 <i className="fab fa-linkedin" style={{fontSize: '25px', color: "#1ebc8c"}} />
               </a>
-              <a href="https://github.com/ag-systems">
+              <a target="_blank" href="https://github.com/ag-systems">
                 <i className="fab fa-github" style={{fontSize: '25px', paddingLeft: '15px', color: "#1ebc8c"}} />
               </a>
-              <a href="https://angel.co/max-chakhmatov">
+              <a target="_blank" href="https://angel.co/max-chakhmatov">
                 <i className="fab fa-angellist" style={{fontSize: '25px', paddingLeft: '15px', color: "#1ebc8c"}} />
               </a>
-              <a href="https://stackoverflow.com/users/5487345/auriga?tab=profile">
+              <a target="_blank" href="https://stackoverflow.com/users/5487345/auriga?tab=profile">
                 <i className="fab fa-stack-overflow" style={{fontSize: '25px', paddingLeft: '15px', color: "#1ebc8c"}} />
               </a>
-              <a href="https://twitter.com/maxchakhmatov">
+              <a target="_blank" href="https://twitter.com/maxchakhmatov">
                 <i className="fab fa-twitter" style={{fontSize: '25px', color: "#1ebc8c" , paddingLeft: '15px' }} />
               </a>
             </div>

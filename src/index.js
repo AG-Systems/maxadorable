@@ -41,7 +41,7 @@ ReactDOM.render(
               {/* <Route exact path="/*" render={(props) => <Footer {...props} /> } /> */}
 
           </div>
-          {/* <Route exact path="/*" render={(props) => <Footer {...props} /> } /> */}
+          <Route exact path="/*" render={(props) => <Footer {...props} /> } />
       </BrowserRouter >
     </Provider>,
   document.getElementById('root')
